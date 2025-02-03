@@ -8,7 +8,7 @@ let command=new CreateTableCommand({
        {
            AttributeName: "Student_id",
            AttributeType: "N"
-       },
+      ,Marks: },
        {
         AttributeName: "Subject_id",
         AttributeType: "N"
@@ -84,6 +84,8 @@ const describeTbl=async()=>{
     let response = await client.send(command);
     console.log(JSON.stringify(response));
 }
-describeTbl();
+//describeTbl();
+
+
 
 
